@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhavya Tyagi — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">
+      <span class="b">&lt;</span>Bhavya<span class="b"> /&gt;</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <div class="hero-dots"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+
+    <!-- two-column wrapper: text left, photo right -->
+    <div class="hero-inner">
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Available for opportunities
+        </div>
+        <p class="hero-hi">Hi there, I'm</p>
+        <h1 class="hero-name">Bhavya Tyagi.</h1>
+        <div class="hero-role">
+          <span id="typed-text"></span><span class="cursor"></span>
+        </div>
+        <p class="hero-desc">
+          I'm a frontend developer skilled in HTML, CSS &amp; JavaScript with a passion for crafting clean, responsive web interfaces. I'm known for strong teamwork and leadership — I love building great things collaboratively.
+        </p>
+        <div class="hero-ctas">
+          <a href="#skills" class="btn-primary">My Skills</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <!-- ★ PHOTO — replace "your-photo.jpg" with your image file name -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <img
+            src="bhavya.png"
+            alt="Bhavya Tyagi"
+            class="hero-photo"
+          />
+        </div>
+      </div>
+
+    </div><!-- /hero-inner -->
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills">
+    <p class="section-label reveal">Skills &amp; Tools</p>
+    <h2 class="section-title reveal">What I Work With</h2>
+    <p class="section-sub reveal">My go-to toolkit for building fast, clean, and accessible web interfaces.</p>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-cat">// Languages</div>
+        <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">JAVA</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-cat">// Styling</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">Flexbox</span>
+          <span class="skill-tag">CSS Grid</span>
+           <span class="skill-tag">Canva</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-cat">// Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Chrome DevTools</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-cat">// Soft Skills</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Team Collaboration</span>
+          <span class="skill-tag">Leadership</span>
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">Problem Solving</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="contact-inner">
+      <p class="section-label reveal">Say Hello</p>
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="section-sub reveal">Have a project in mind or just want to connect? My inbox is always open.</p>
+      <a href="mailto:bhavyatyagi000077@gmail.com" class="contact-email reveal">
+        bhavyatyagi000077@gmail.com
+      </a>
+      <form class="contact-form reveal" id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="What's on your mind..." required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary" id="send-btn">Send Message →</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <span class="footer-copy">© 2026 Bhavya Tyagi · Built with passion.</span>
+    <div class="footer-socials">
+      <a href="https://github.com/bhavya-tyagi20" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/bhavya-tyagi-b3a569324" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://twitter.com/BhavyaTyagi5643" target="_blank" rel="noopener">Twitter / X</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
